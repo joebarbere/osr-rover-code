@@ -20,6 +20,9 @@
       <color rgba="0.5451 0.2706 0.0745 1"/>
     </material>
 
+    <!-- Simulator: classic (Gazebo Classic 11, Humble) or harmonic (Gazebo
+         Harmonic, Jazzy). Selects the plugins in gazebo.urdf.xacro. -->
+    <xacro:arg name="sim" default="classic"/>
     <xacro:include filename="$(find osr_gazebo)/urdf/gazebo.urdf.xacro"/>
     <xacro:include filename="$(find osr_gazebo)/urdf/insert_transmission.urdf.xacro"/>
 
